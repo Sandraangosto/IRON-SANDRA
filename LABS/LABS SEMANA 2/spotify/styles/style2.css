@@ -1,0 +1,111 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background: white;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Open Sans" Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: fixed;
+    color: white;
+}
+.navigation img{
+    width: 20%;
+}
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+/* Otra manera de edtilar 
+header > nav > ul{
+    list-style: none;
+}*/
+
+.navigation ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+/* clase hover es para cambiar cuando pones el cursor sobre un enlace */
+.navigation ul > li > a:hover{
+    color: #1Ab1a6;
+}
+
+.music{
+    height: 600px;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.music h1{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.music p{
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-size: 2rem;
+}
+.card img{
+    width: 10%;
+}
+.avility h2{
+    text-align: center;
+    padding: 2rem 0;
+    text-decoration: underline #1Ab1a6;
+    text-underline-offset: o.5rem;
+    font-size: 2rem;
+}
+.card{
+    text-align: center;
+}
+.card-container{
+    display:flex;
+    padding: 2rem 0rem;
+}
+.card h3{
+    color: #1Ab1a6;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.card p{
+    max-width: 150px;
+    text-align: center;
+    font-weight: 100;
+    font-style: 1, 5rem;
+}
+.kyne {
+    height: 600px;
+    background-color: #1Ab1a6;
+    background-image: url("../images/spotify-icon-white.png");
+    background-position: center center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    margin: 0 2rem
+
+}
