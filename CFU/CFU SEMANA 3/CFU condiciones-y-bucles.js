@@ -17,18 +17,18 @@ if (language === "Español") {
 
 //APRENDIENDO A USAR EL SWITCH
 
-const language = prompt("Please enter the language - (options: Spanish, French, English): ");
-const name = prompt("Please enter your name: ");
+const language2 = prompt("Please enter the language - (options: Spanish, French, English): ");
+const name2 = prompt("Please enter your name: ");
  
-switch (language) {
+switch (language2) {
   case "Spanish":
-    console.log(`Hola, ${name}!`);
+    console.log(`Hola, ${name2}!`);
     break;
   case "French":
-    console.log(`Salut, ${name}!`);
+    console.log(`Salut, ${name2}!`);
     break;
   case "English":
-    console.log(`Hello, ${name}!`);
+    console.log(`Hello, ${name2}!`);
     break;
   default:
     console.log("I am not sure which language that is! Sorry!");
@@ -36,10 +36,10 @@ switch (language) {
 
     // Otro ejemplo de switch
 
-    const name = prompt("Your favorite Game of Thrones character?");
+    const name3 = prompt("Your favorite Game of Thrones character?");
  
 let house = "";
-switch (name) {
+switch (name3) {
   case "Daenerys":
     house = "Targaryen";
     break;
@@ -69,7 +69,7 @@ while (i <= 30) {
 
 // iteration 2
  
-let i = 0;
+i = 0;
 while (i < 30) {
   i++; // this is the same as i = i + 1
   if (i === 10) {
