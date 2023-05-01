@@ -31,3 +31,12 @@ console.log(fruits);
 // 2. apple,
 // 3. orange,
 // 4. cherry
+function mostrarMensaje() {
+    alert('Hola, mundo!');
+  }
+
+  if ("false") {
+    console.log("Passed thingy is truthy");
+  } else {
+    console.log("Passed thingy is falsy");
+  }
