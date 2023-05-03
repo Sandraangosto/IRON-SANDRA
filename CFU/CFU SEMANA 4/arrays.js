@@ -46,3 +46,5 @@ for (const elemOfArr of fruits) {
 fruits.forEach(function(elem, index){
     console.log(`${elem} ------> ${index}`);
   })
+  
+
