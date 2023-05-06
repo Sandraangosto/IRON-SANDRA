@@ -14,12 +14,6 @@ console.log(maxOfTwoNumbers(10,20));
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {
-  for (let i = 0; i < words.length; i++) {
-  console.log(words[i]);
-}
-}
-// OTRA OPCION //
 function findLongestWord(words) {
   let longestWord = '';
   for (let i = 0; i < words.length; i++) {
@@ -27,18 +21,51 @@ function findLongestWord(words) {
       longestWord = words[i];
     }
   }
-  return longestWord;
+
+  return longestWord.length>0 ? longestWord : null;
 }
+
+console.log(findLongestWord(words));
+
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(suma) {
+  let countSuma=0;
+  for (let index = 0; index < suma.length; index++) {
+    countSuma += suma[index];
+    
+  };
 
+  return countSuma;
+}
+
+console.log(sumNumbers(numbers));
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 57
+
+function sum(mixedArr) {
+  let countSuma=0;
+  for (let index = 0; index < mixedArr.length; index++) {
+    if (typeof mixedArr[index]== "number") {
+      countSuma+=mixedArr[index];
+    } else if (typeof mixedArr[index]== "string") {
+      countSuma+=mixedArr[index].length;
+    } else if (typeof mixedArr[index]== "boolean") {
+      countSuma+=Number(mixedArr[index]);
+    }else{
+      throw "Unsupported data type sir or ma'am";
+    }
+  }
+  return countSuma;
+}
+
+console.log(sum(mixedArr));
 
 
 
@@ -46,16 +73,27 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
-
+function averageNumbers(media) {
+  return media.length>0 ? sumNumbers(media) / media.length : null;
+}
+console.log(averageNumbers(numbersAvg));
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(arrayOfString) { 
+  return arrayOfString.length>0 ? sum(arrayOfString) / arrayOfString.length:null;
+}  
+console.log(averageWordLength(wordsArr));
 
 // Bonus - Iteration #4.1
-function avg() {}
+const mixedArray = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 5.7
+function avg(arr) {
+  return arr.length>0 ? sum(arr) / arr.length: null;
+}
+console.log(avg(mixedArray));
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
