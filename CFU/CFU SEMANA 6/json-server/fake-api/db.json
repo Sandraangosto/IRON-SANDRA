@@ -1,0 +1,103 @@
+
+{
+    "cities":[
+       {
+          "id":1,
+          "name":"Barcelona"
+       },
+       {
+          "id":2,
+          "name":"Madrid"
+       },
+       {
+          "id":3,
+          "name":"Miami"
+       },
+       {
+          "id":4,
+          "name":"Paris"
+       }
+    ],
+    "courses":[
+       {
+          "id":1,
+          "name":"WebDev",
+          "type":"Full Time"
+       },
+       {
+          "id":2,
+          "name":"WebDev",
+          "type":"Part Time"
+       },
+       {
+          "id":3,
+          "name":"UX/UI",
+          "type":"Full Time"
+       },
+       {
+          "id":4,
+          "name":"UX/UI",
+          "type":"Part Time"
+       }
+    ],
+    "bootcamps":[
+       {
+          "id":1,
+          "cityId":1,
+          "courseId":1
+       },
+       {
+          "id":2,
+          "cityId":2,
+          "courseId":2
+       },
+       {
+          "id":3,
+          "cityId":3,
+          "courseId":1
+       },
+       {
+          "id":4,
+          "cityId":4,
+          "courseId":2
+       },
+       {
+          "id":5,
+          "cityId":2,
+          "courseId":3
+       },
+       {
+          "id":6,
+          "cityId":3,
+          "courseId":4
+       },
+       {
+          "id":7,
+          "cityId":1,
+          "courseId":3
+       }
+    ],
+    "users": [
+        {
+          "id": 1,
+          "name": "Petar",
+          "email": "pepe@gmail.com"
+        }
+      ],
+      "posts": [
+        {
+          "id": 104,
+          "title": "Petar's post",
+          "body": "This is Petar's post about his favorite hobby - collecting car toys.",
+          "userId": 1
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "text": "Wow! So nice to see pictures of your car collection. Keep collecting them and sharing with us!!!",
+          "userId": 3,
+          "postId": "104"
+        }
+      ]
+ }
