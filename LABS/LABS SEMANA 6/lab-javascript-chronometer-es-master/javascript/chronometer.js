@@ -7,7 +7,7 @@ class Chronometer {
 
   start(callback) {
     this.internvalID = setInterval(() => {
-      this,this.currentTime += 1;
+      this.currentTime ++;
     }, 1000)
   }
 
@@ -38,8 +38,8 @@ class Chronometer {
   }
 
   split() {
-    let minutos = this.computeTwoDigitNumber(this.getMinutes);
-    let seconds = this.computeTwoDigitNumber(this,this.getSeconds);
+    let minutos = this.computeTwoDigitNumber(this.getMinutes());
+    let seconds = this.computeTwoDigitNumber(this.getSeconds());
 
     return `${minutos}${segundos}`;
   }
