@@ -104,6 +104,7 @@ En esta sección se puede incluir información como:
 
 En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
 <-->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap Trello
