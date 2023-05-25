@@ -13,12 +13,70 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
-
-
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
 /* ------------------------------------------------------------------------ */
+
+.container{
+  display: block;
+  align-items: center;
+}
+
+.barra{
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.barra img{
+  width: 8%;
+  height: auto;
+  margin-left: 30px;
+}
+
+.menu{
+  float: right;
+  margin-right: 30px;
+  flex-grow: 1;
+  
+}
+
+#lista {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+#lista li{
+  display: inline;
+  position: flex;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 0 10px;
+  
+}
+#lista li a {
+  text-decoration: none;
+  color: black;
+}
+ #lista a:hover{
+  color: #072ac8;
+ }
+
+.btnContacto{
+  background-color: #072ac8;
+  width: 150px;
+  height: 50px;
+  margin-left: 10px;
+}
+
 
 /* ------------------------------ Splash page ------------------------------ */
 
