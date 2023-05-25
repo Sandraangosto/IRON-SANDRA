@@ -66,21 +66,7 @@ Para poder hacer la página web adaptada para poder verla adecuadamente en el m�
 
 https://www.youtube.com/watch?v=x-MFJhqRZ7s&t=9s
 
-<!-->
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
 
-En esta sección se puede incluir información como:
-
-- Una descripción breve del proyecto y su propósito
-- Tecnologías utilizadas
-- Funcionalidades principales
-- Instrucciones de instalación y configuración
-- Enlaces a documentación adicional o recursos relacionados con el proyecto
-- Licencia del proyecto
-- Contribuciones de las personas en el proyecto.
-
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
-<-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,20 +76,7 @@ En esta Web vamos a utlizar HTML 5, CSS3 y JavaScript.
 Para tener un repositorio de esta web hemos utilizado Github para tener un control de nuestro proyecto y tener una copia del proyecto.
 También vamos a usar Netify o Versel para poder tener nuestra web alojada. 
 
-<!-->
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
-
-En esta sección se puede incluir información como:
-
-- Lenguajes de programación utilizados
-- Frameworks y bibliotecas utilizadas
-- Herramientas de desarrollo (IDE, control de versiones, etc)
-- Servicios en la nube utilizados (si corresponde)
-- Otros recursos o tecnologías relacionadas con el proyecto.
-
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
-<-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
