@@ -42,14 +42,6 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
     </li>
     <li>
     <a href="#roadmap">Roadmap</a>
-     <ul>
-     <li><a href="#backlog">Back log</a></li>
-        <li><a href="#day-one">Lunes 23, Enero 2023</a></li>
-        <li><a href="#day-two">Martes 24, Enero 2023</a></li>
-        <li><a href="#day-three">Miercoles 25, Enero 2023</a></li>
-        <li><a href="#day-four">Jueves 26, Enero 2023</a></li>
-        <li><a href="#day-five">Viernes 27, Enero 2023</a></li>
-      </ul>
     </li>
     <li><a href="#acerca">Acerca</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
@@ -64,6 +56,17 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
+Vamos a crear una página web para una WebSite llamada Circle Agency, la cual va a tener varias secciones y en la que vamos a poner en práctica los conocimientos que hemos adquirido en este bootcamp. 
+
+En este proyecto vamos a utilizar las utilizar HTML5, CSS3 y JavaScript.
+
+Las funcionabilidades de la página serán poder desplazarnos por ella mediante las secciones que hemos creado y poder rellenar un formulario de contacto. 
+
+Para poder hacer la página web adaptada para poder verla adecuadamente en el móvil he utilizado el sigueiente enlace para poder tener una guía de como proceder. 
+
+https://www.youtube.com/watch?v=x-MFJhqRZ7s&t=9s
+
+<!-->
 La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
 
 En esta sección se puede incluir información como:
@@ -77,10 +80,17 @@ En esta sección se puede incluir información como:
 - Contribuciones de las personas en el proyecto.
 
 En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
+<-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
+
+En esta Web vamos a utlizar HTML 5, CSS3 y JavaScript.
+Para tener un repositorio de esta web hemos utilizado Github para tener un control de nuestro proyecto y tener una copia del proyecto.
+También vamos a usar Netify o Versel para poder tener nuestra web alojada. 
+
+<!-->
 
 La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
 
@@ -93,41 +103,14 @@ En esta sección se puede incluir información como:
 - Otros recursos o tecnologías relacionadas con el proyecto.
 
 En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
-
+<-->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Roadmap
+## Roadmap Trello
 
-#### Backlog
+https://trello.com/b/2NAbRiKb/circle-agency-landing-page
 
-- [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
 
-#### Day One
-
-#### Day One
-
-###### Lunes 23, Enero 2023
-
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [ ] Ej - Crear section "projects" en html
-- [x] Ej - Crear section "projects" en html
-
-#### Day Two
-
-###### Martes 24, Enero 2023
-
-#### Day Three
-
-###### Miercoles 25, Enero 2023
-
-#### Day Four
-
-###### Jueves 26, Enero 2023
-
-#### Day Five
-
-###### Viernes 27, Enero 2023
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,6 +118,15 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ## Acerca
 
+Mi nombre es Sanra Angosto tengo 28 años y es la primera vez que estoy desarollando una página web. 
+
+sandra_angosto@hotmail.es
+
+Project Link: [https://github.com/Sandraangosto/IRON-SANDRA/tree/main/midterm-project-boiler](https://github.com/Sandraangosto/IRON-SANDRA/tree/main/midterm-project-boiler)
+
+Presentation Link: [Insert here your presentation link](insert-link-here)
+
+<!-->
 La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
 
 En esta sección se puede incluir información como:
@@ -151,7 +143,7 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 Presentation Link: [Insert here your presentation link](insert-link-here)
-
+<-->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
