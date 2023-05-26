@@ -6,23 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="resources/styles/contact.css" />
+    <link rel="stylesheet" href="resources/styles/style.css" />
 </head>
 <body>
-    
-<h1>Formulario de Contacto</h1>
-<form action="enviar.php" method="POST">
-  <label for="nombre">Nombre:*</label><br>
-  <input type="text" id="nombre" name="nombre" required><br><br>
 
-  <label for="email">Email:*</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <label for="mensaje">Mensaje:*</label><br>
-  <textarea id="mensaje" name="mensaje" required></textarea><br><br>
-
-  <input type="submit" value="Enviar">
-</form>
-
+    <div class="container">
+        <div class="barra">
+          <img src="resources/images/logos/circle.svg" alt="circle">
+          <nav class="menu"> 
+            <ul id="lista">
+              <li> <a href="#home"> Home</a> </li>
+              <li> <a href="#projects"> Projects </a> </li>
+              <li> <a href="#services"> Services  </a></li>
+  
+          </ul>
+          </nav>
+          <button class="btnContacto type="submit"  onclick="location.href='contact-us.html'">Contacto</button>
+          </div>
+      </div>
+      <section>
+      <div id="formulario">
+        <h1>Formulario de Contacto</h1><br>
+        <div class="divNombre">
+            <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:*</label><br><br>
+            <input id="nombre" type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre aqui..." required><br><br>
+        </div>
+        <div class="divMedio">
+            <div class="divEmail">
+            <label for="email">Email:*</label><br><br>
+            <input id="email" type="email" id="email" name="email" placeholder="Introduce tu email aqui..." required><br><br>
+        </div>
+        <div class="divPhone">
+            <label for="phone">Phone:*</label><br><br>
+            <input id="phone" type="number"  name="phone" placeholder="Introduce tu teléfono aqui..."required><br><br>
+        </div>
+        </div>
+        <div class="divMensaje">
+            <label for="mensaje">Mensaje:*</label><br><br>
+            <textarea
+            placeholder="Escribe tu menmsaje..."
+            maxlength="5000" id="mensaje" required=""
+          ></textarea><br><br>
+        </div> 
+        <input id="enviar" type="submit" value="Enviar">
+        </form>
+      </div>
+      </section>
 </body>
 </html>
 
