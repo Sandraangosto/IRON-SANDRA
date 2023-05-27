@@ -176,18 +176,24 @@ body {
 
 /*-----------SECCION IMAGENES -----------*/
 
-/* ------------------------------ Splash page ------------------------------ */
+.logos{
+  margin: 100px 150px 20px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70rem;
+  flex-wrap: wrap;
+  
+  
+}
 
-/* Your CSS code goes here */
+.logos img{
 
-/* ------ CIRCULAR ANIMATION ------ */
-
-/* Your CSS code goes here */
-
-
-/* ------------------------------ Header ------------------------------ */
-
-/* Your CSS code goes here */
+  margin: 0 auto;
+  width: 15rem;
+  
+}
 
 /* ------------------------------ Partners ------------------------------ */
 
