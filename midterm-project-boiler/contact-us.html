@@ -18,35 +18,35 @@
               <li> <a href="#projects"> Projects </a> </li>
               <li> <a href="#services"> Services  </a></li>
           </ul>
-          <button class="btnContacto type="submit"  onclick="location.href='contact-us.html'">Contacto</button>
+          <button class="btnContacto type="submit"  onclick="location.href='contact-us.html'">Contact Us</button>
         </nav>
     </section>
       <section id="section1">
       <div id="formulario">
-        <h1>Formulario de Contacto</h1><br>
+        <h1 id="tituloForm">Contact Us</h1><br><br>
         <div class="divNombre">
             <form action="enviar.php" method="POST">
-            <label for="nombre">Nombre:*</label><br><br>
-            <input id="nombre" type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre aqui..." required><br><br>
+            <label class="labelform" for="nombre">Full Name:*</label><br>
+            <input id="nombre" type="text" id="nombre" name="nombre" placeholder="Enter your full name" required><br><br>
         </div>
         <div class="divMedio">
             <div class="divEmail">
-            <label for="email">Email:*</label><br><br>
-            <input id="email" type="email" id="email" name="email" placeholder="Introduce tu email aqui..." required><br><br>
+            <label class="labelform" for="email">Email:*</label><br>
+            <input id="email" type="email" id="email" name="email" placeholder="Enter your email    " required><br><br>
         </div>
         <div class="divPhone">
-            <label for="phone">Phone:*</label><br><br>
-            <input id="phone" type="number"  name="phone" placeholder="Introduce tu teléfono aqui..."required><br><br>
+            <label class="labelform" for="phone">Phone:*</label><br>
+            <input id="phone" type="number"  name="phone" placeholder="Enter your phone"required><br><br>
         </div>
         </div>
         <div class="divMensaje">
-            <label for="mensaje">Mensaje:*</label><br><br>
+            <label class="labelform" for="mensaje">Message:*</label><br>
             <textarea
-            placeholder="Escribe tu menmsaje..."
+            placeholder="Write your message here..."
             maxlength="5000" id="mensaje" required=""
           ></textarea><br><br>
         </div> 
-        <input id="enviar" type="submit" value="Enviar">
+        <input id="enviar" type="submit" value="Submit">
         </form>
       </div>
       </section>
