@@ -98,7 +98,7 @@ sandra_angosto@hotmail.es
 
 Project Link: [https://github.com/Sandraangosto/IRON-SANDRA/tree/main/midterm-project-boiler](https://github.com/Sandraangosto/IRON-SANDRA/tree/main/midterm-project-boiler)
 
-Presentation Link: [Insert here your presentation link](insert-link-here)
+Presentation Link: [https://www.canva.com/design/DAFlDlFToyQ/rHdOfrf7vrwvwnh-AFj6Eg/view?utm_content=DAFlDlFToyQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink](https://www.canva.com/design/DAFlDlFToyQ/rHdOfrf7vrwvwnh-AFj6Eg/view?utm_content=DAFlDlFToyQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 <!-->
 La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
