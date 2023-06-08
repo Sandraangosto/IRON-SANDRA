@@ -1,9 +1,13 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import Options from './components/Options.vue';
 import TheWelcome from './components/TheWelcome.vue'
+import Composition from './components/Composition.vue';
 </script>
 
 <template>
+  <Options />
+  <Composition />
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
