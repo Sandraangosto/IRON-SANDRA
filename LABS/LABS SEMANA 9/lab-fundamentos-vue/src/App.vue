@@ -1,8 +1,8 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Footer from './components/Footer.vue'
-import Navbar from '.components/Navbar.vue'
+//import TheWelcome from './components/TheWelcome.vue'
+ import FooterP from './components/FooterP.vue'
+ import BarraNav from './components/BarraNav.vue'
 
 
 </script>
@@ -18,7 +18,12 @@ import Navbar from '.components/Navbar.vue'
 
   <main>
     <TheWelcome />
-  </main>
+    <FooterP/>
+    <BarraNav />
+    <HelloWorld />
+    </main>
+    
+  
 </template>
 
 <style scoped>
