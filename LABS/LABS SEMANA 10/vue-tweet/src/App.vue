@@ -37,7 +37,7 @@
 
 <template>
   <div class="app">
-    <Tweet v-for="(tweet, index) in tweets" :key="tweet"
+    <Tweet v-for="(tweet) in tweets" :key="tweet"
     :NameCardTweet="tweet.user.name"
     :HandleCardTweet="tweet.user.handle"
     :TimeStampCardTweet="tweet.timestamp"

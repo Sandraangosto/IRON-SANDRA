@@ -1,3 +1,8 @@
+
+<template>
+  <span class="name">{{name}}</span>
+</template>
+
 <script setup>
 defineProps({
   name: {
@@ -7,8 +12,5 @@ defineProps({
 });
 </script>
 
-<template>
-  <span class="name">{{name}}</span>
-</template>
 
 <style scoped></style>

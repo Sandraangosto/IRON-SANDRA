@@ -1,5 +1,4 @@
-<script setup>
-</script>
+
 
 <template>
   <div class="actions">
@@ -9,5 +8,9 @@
     <i class="fas fa-share"></i>
   </div>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped></style>

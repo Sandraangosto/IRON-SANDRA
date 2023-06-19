@@ -1,3 +1,10 @@
+
+
+<template>
+  <span class="handle">{{ handle }}</span>
+</template>
+
+
 <script setup>
 
 defineProps({
@@ -9,8 +16,5 @@ defineProps({
 
 </script>
 
-<template>
-  <span class="handle">{{ handle }}</span>
-</template>
 
 <style scoped></style>
