@@ -9,7 +9,7 @@
 <script setup>
 defineProps({
   message: {
-    type: String,
+    type: Object,
     required: true,
   },
 });

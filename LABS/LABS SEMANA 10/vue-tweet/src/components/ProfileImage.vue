@@ -5,16 +5,13 @@ defineProps({
     type: String,
     required: true,
   },
-  alternativeText: {
-    type: String,
-    required: true,
-  },
+ 
 });
 
 </script>
 
 <template>
-  <img :src="image" class="profile" :alt="alternativeText" />
+  <img :src="image" class="profile" :alt="ImgProfile" />
 </template>
 
 <style scoped></style>

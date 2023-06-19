@@ -43,6 +43,7 @@ import Timestamp from "./Timestamp.vue";
 import Message from "./Message.vue";
 import ProfileImage from "./ProfileImage.vue";
 import Actions from "./Actions.vue";
+import User from './User.vue';
 
 defineProps({
   NameCardTweet: {
