@@ -23,12 +23,19 @@
   </div>
 </template>
 
+<style scoped>
+a {
+  color: #42b983;
+}
+</style>
+
+
 <script setup>
 import Iconos from "./TweetComponents/Iconos.vue";
-import Mensaje from "./TweetComponents/Mensaje.vue";
-import Usuario from "./TweetComponents/Usuario.vue";
-import Timestamp from "./TweetComponents/TimeStamp.vue";
 import Imagen from "./TweetComponents/Imagen.vue";
+import Mensaje from "./TweetComponents/Mensaje.vue";
+import TimeStamp from "./TweetComponents/TimeStamp.vue";
+import Usuario from "./TweetComponents/Usuario.vue";
 
 defineProps({
   mensajePropPadre: {
