@@ -1,21 +1,21 @@
 <template>
   <div class="tweet">
-    <ProfileImage :image="ImageCardTweet"/>
+    <ProfileImage :image="ImageTweet"/>
     <!-- <img src="https://i.imgur.com/9yw1Fyw.jpg" class="profile" alt="profile" /> -->
     <div class="body">
       <div class="top">
         <span class="user">
-          <Name :name="NameCardTweet" />
+          <Name :name="NameTweet" />
            <!-- <span class="name">Ironhack</span> -->
-          <Handle :handle="HandleCardTweet" />
+          <Handle :handle="HandleTweet" />
             <!-- <span class="handle">@ironhack</span> -->
         </span>
 
-        <Timestamp :timestamp="TimeStampCardTweet" />
+        <Timestamp :timestamp="TimeStampTweet" />
         <!-- <span class="timestamp">Nov 30, 2020</span> -->
       </div>
      
-      <Message :message="MessageCardTweet"/>
+      <Message :message="MessageTweet"/>
        <!-- <p class="message">
         On December 7th, we will be hosting a #webinar that will introduce you
         to #SQL! Are you ready? 🚀
@@ -46,19 +46,19 @@ import Actions from "./Actions.vue";
 import User from './User.vue';
 
 defineProps({
-  NameCardTweet: {
+  NameTweet: {
     type: String,
   },
-  HandleCardTweet: {
+  HandleTweet: {
     type: String,
   },
-  TimeStampCardTweet: {
+  TimeStampTweet: {
     type: String,
   },
-  MessageCardTweet: {
+  MessageTweet: {
     type: String,
   },
-  ImageCardTweet: {
+  ImageTweet: {
     type: String,
   }
 });

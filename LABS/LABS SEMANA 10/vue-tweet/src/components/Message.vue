@@ -1,9 +1,7 @@
 
 
 <template>
-    <p class="message">
-        {{message}}
-      </p>
+    <p class="message"> {{message}} </p>
 </template>
 
 <script setup>

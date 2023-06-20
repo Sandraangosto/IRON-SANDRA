@@ -38,14 +38,14 @@
 <template>
   <div class="app">
     <Tweet v-for="(tweet) in tweets" :key="tweet"
-    :NameCardTweet="tweet.user.name"
-    :HandleCardTweet="tweet.user.handle"
-    :TimeStampCardTweet="tweet.timestamp"
-    :MessageCardTweet="tweet.message"
-    :ImageCardTweet="tweet.user.image"
+    :NameTweet="tweet.user.name"
+    :HandleTweet="tweet.user.handle"
+    :TimeStampTweet="tweet.timestamp"
+    :MessageTweet="tweet.message"
+    :ImageTweet="tweet.user.image"
     
     />
-  </div>
+  </div> 
 </template>
 
 <style scoped>
