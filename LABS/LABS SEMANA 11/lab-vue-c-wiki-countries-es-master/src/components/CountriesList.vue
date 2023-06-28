@@ -61,6 +61,7 @@
                 <img src="https://flagpedia.net/data/flags/icon/72x54/zw.png" />
                 <p>Zimbabwe</p>
               </router-link>
+              <router-view />
             </div>
           </div>
 </template>

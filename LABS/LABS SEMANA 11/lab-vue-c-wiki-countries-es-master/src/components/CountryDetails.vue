@@ -1,6 +1,6 @@
 <template>
     <div></div>
-   <!--<div class="col-7">
+    <div class="col-7">
             <img src="https://restcountries.eu/data/fra.svg" alt="country flag" style="width: 300px"/>
             <h1>France</h1>
             <table class="table">
@@ -32,8 +32,7 @@
                 </tr>
               </tbody>
             </table>
-          </div>-->
-          
+          </div>
 </template>
 
 <script>
