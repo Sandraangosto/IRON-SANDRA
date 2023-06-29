@@ -1,6 +1,6 @@
 <template>
-    <div></div>
-    <div class="col-7">
+
+  <main class="col-7">
             <img src="https://restcountries.eu/data/fra.svg" alt="country flag" style="width: 300px"/>
             <h1>France</h1>
             <table class="table">
@@ -8,12 +8,12 @@
               <tbody>
                 <tr>
                   <td style="width: 30%">Capital</td>
-                  <td>{{country.name}}</td>
+                  <td>4444</td>
                 </tr>
                 <tr>
                   <td>Area</td>
                   <td>
-                    {{country.area}}<sup>2</sup>
+                    444<sup>2</sup>
                   </td>
                 </tr>
                 <tr>
@@ -32,13 +32,13 @@
                 </tr>
               </tbody>
             </table>
-          </div>
+          </main>
 </template>
+ 
+<script setup>
+//import axios from 'axios';
 
-<script>
-import axios from 'axios';
-
-    export default {
+    /*export default {
   data() {
     return {
       country: null // Mantenemos los detalles del país aquí
@@ -67,7 +67,7 @@ import axios from 'axios';
         });
     }
   }
-};
+};*/
 </script>
 
 <style lang="scss" scoped>

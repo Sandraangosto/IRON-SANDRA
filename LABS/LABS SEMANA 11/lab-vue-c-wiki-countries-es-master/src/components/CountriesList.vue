@@ -61,13 +61,13 @@
                 <img src="https://flagpedia.net/data/flags/icon/72x54/zw.png" />
                 <p>Zimbabwe</p>
               </router-link>
-              <router-view />
+              <router-view></router-view>
             </div>
           </div>
 </template>
 
-<script setup>
-
+<script setup> 
+import { ref, onMounted } from "vue";
 
 </script>
 

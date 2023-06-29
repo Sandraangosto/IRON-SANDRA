@@ -1,10 +1,9 @@
 <template>
-  <div class="app">
+  
     <Barra />
     <CountriesList />
   
-    <router-view></router-view>
-    </div>
+    <routerView />
 </template>
 
 <script setup>
