@@ -1,16 +1,9 @@
-<template>
-  
-    <Barra />
-    <CountriesList />
-  
-    <routerView />
-</template>
-
 <script setup>
-  import Barra from './components/Barra.vue';
-  import CountriesList from './components/CountriesList.vue';
+import { RouterLink, RouterView } from "vue-router";
+import Barra from "./components/Barra.vue";
 </script>
 
-<style>
-
-</style>
+<template>
+  <Barra />
+  <RouterView />
+</template>

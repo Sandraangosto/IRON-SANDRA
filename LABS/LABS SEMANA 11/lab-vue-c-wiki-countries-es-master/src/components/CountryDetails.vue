@@ -1,73 +1,77 @@
 <template>
-
-  <main class="col-7">
-            <img src="https://restcountries.eu/data/fra.svg" alt="country flag" style="width: 300px"/>
-            <h1>France</h1>
+<div>
+  <div>
+            <img :src="`https://flagcdn.com/w320/${country.alpha2Code.toLowerCase()}.png`" alt="country flag" style="width: 300px"/>
+            <h1>{{country.name.common}}</h1>
             <table class="table">
               <thead></thead>
               <tbody>
                 <tr>
                   <td style="width: 30%">Capital</td>
-                  <td>4444</td>
+                  <td>{{country.capital[0]}}</td>
                 </tr>
                 <tr>
                   <td>Area</td>
                   <td>
-                    444<sup>2</sup>
+                    {{country.area}}<sup>2</sup>
                   </td>
                 </tr>
                 <tr>
                   <td>Borders</td>
                   <td>
-                    <ul>
-                      <li><a href="/AND">Andorra</a></li>
-                      <li><a href="/BEL">Belgium</a></li>
-                      <li><a href="/DEU">Germany</a></li>
-                      <li><a href="/ITA">Italy</a></li>
-                      <li><a href="/MCO">Monaco</a></li>
-                      <li><a href="/ESP">Spain</a></li>
-                      <li><a href="/CHE">Switzerland</a></li>
+                    <ul class="d-flex justify-content-between align-items-center">
+                      <router-link
+                      v-for="(border, index) in country.borders"
+                      :key="index"
+                      :to="`/list/${border}`"> {{ border }} </router-link>
                     </ul>  
                   </td>
                 </tr>
               </tbody>
             </table>
-          </main>
+          </div>
+        </div>
 </template>
  
 <script setup>
-//import axios from 'axios';
+import { ref, computed, watch, onMounted } from "vue";
+import { useRoute } from "vue-router";
 
-    /*export default {
-  data() {
-    return {
-      country: null // Mantenemos los detalles del país aquí
-    };
-  },
-  mounted() {
-    // Obtener el código alpha3Code del país desde la ruta
-    const alpha3Code = this.$route.params.alpha3Code;
+// Variable para almacenar info del país.
+let country = ref(null);
 
-    // Llamar a una función o servicio para obtener los detalles del país según el código alpha3Code
-    this.getCountryDetails(alpha3Code);
-  },
-  methods: {
-    getCountryDetails(alpha3Code) {
-      // Llamar a una API o realizar cualquier otra lógica para obtener los detalles del país
-      // Puedes usar bibliotecas como Axios para realizar llamadas HTTP
+let route = useRoute();
 
-      // Ejemplo: Obtener los detalles del país desde una API (pseudocódigo)
+// funcion para obtener la información del país
+let getAlpha3 = async () => {
+  let codeAlpha3 = route.params.alpha3Code;
 
-      axios.get(` https://ih-countries-api.herokuapp.com/countries/${alpha3Code}`)
-        .then(response => {
-          this.country = response.data;
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    }
-  }
-};*/
+  // obtenemos datos de la api
+  let response = await fetch(
+    `https://ih-countries-api.herokuapp.com/countries/${codeAlpha3}`
+  );
+  console.log(response);
+
+  let response2 = await response.json();
+  console.log(response2);
+
+  country.value = response2;
+  console.log(country);
+  return { country };
+};
+getAlpha3();
+
+onMounted(() => getAlpha3());
+
+let countrycode = computed(() => route.params.alpha3Code);
+
+// watchers,
+// es comom un vigilante, ssta pendiente de algun cambio o monitorea tu compoonente. watcher sigue siendo un metodo nativo de vue.
+// 1 regla -siendo uin metodo recibe dentro de los() un func anonima.
+// 2 regla - antes de la func anonima, tu tienes que especificarle al metodo watch() que monitorear en teoria
+watch(countrycode, () => {
+  getAlpha3();
+});
 </script>
 
 <style lang="scss" scoped>
