@@ -1,6 +1,9 @@
 <template>
   <h1>IronContacts</h1>
-  <button @click="addcontact">Add Randon Contact</button>
+  <button @click="addcontact">Add Random Contact</button>
+  <button @click="addcontact">Sort By Popularity</button>
+  <button @click="addcontact">Sort By Name</button>
+
   <center>
   <table>
     <thead>
@@ -13,7 +16,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(contact, index) in contacts" :key="index">
+      <tr v-for="(contact) in contacts" :key="contact.id">
         <td><img class="pic" :src="contact.pictureUrl" alt="Contact Picture" /></td>
         <td>{{ contact.name }}</td>
         <td>{{ contact.popularity.toFixed(2) }}</td>
@@ -31,10 +34,10 @@
 import { ref, reactive, watch } from "vue";
 import contactjson from './contacts.json';
 
-let contacts = reactive([]);
+let contacts = ref([]);
 
 function fetchData () {
-  contacts=contactjson.slice(0, 5);
+  contacts.value=contactjson.slice(0, 5);
   console.log(contactjson);
   console.log(contacts);
 
@@ -47,10 +50,10 @@ function addcontact(){
     let randomContact = contactjson[randomIndex];
     console.log(randomContact);
 
-    let existingContact = contacts.find(contact => contact.id === randomContact.id);
+    let existingContact = contacts.value.find(contact => contact.id === randomContact.id);
     console.log(existingContact);
     if(existingContact==undefined){
-      contacts.push(randomContact);
+      contacts.value.push(randomContact);
       console.log(contacts);
       break;
     }else{
@@ -65,10 +68,7 @@ function addcontact(){
 
 }
 
-watch(contacts, () => {
-  $nextTick();
 
-});
 
 
 fetchData();
