@@ -1,8 +1,8 @@
 <template>
   <h1>IronContacts</h1>
   <button @click="addcontact">Add Random Contact</button>
-  <button @click="addcontact">Sort By Popularity</button>
-  <button @click="addcontact">Sort By Name</button>
+  <button @click="sortListByPopularity">Sort By Popularity</button>
+  <button @click="sortListByName">Sort By Name</button>
 
   <center>
   <table>
@@ -13,6 +13,7 @@
         <th>Popularity</th>
         <th>WonOscar</th>
         <th>WonEmmy</th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -22,7 +23,9 @@
         <td>{{ contact.popularity.toFixed(2) }}</td>
         <td>{{ contact.wonOscar ? '🏆' : '' }}</td>
         <td>{{ contact.wonEmmy ? '🏆' : '' }}</td>
-        
+        <td>
+        <button @click="eliminarContacto(contact)">Eliminar</button>
+      </td>
 
       </tr>
     </tbody>
@@ -59,17 +62,23 @@ function addcontact(){
     }else{
       console.log("existe");
     }
-
-    
-
   }
-  
-
-
 }
 
+const sortListByPopularity = () => {
+    contacts.value.sort((a, b) => b.popularity - a.popularity);
+  };
 
+  const sortListByName = () => {
+    contacts.value.sort((a, b) => a.name.localeCompare(b.name));
+  };
 
+ const eliminarContacto = (contact) => {
+      const index = contacts.value.indexOf(contact);
+      if (index !== -1) {
+        contacts.value.splice(index, 1);
+      }
+    };
 
 fetchData();
 
